@@ -1,0 +1,3 @@
+# disql 从 stdin 读脚本时，CRLF 会让 `;` 失效，语句永远不执行。
+# 强制 SQL 脚本用 LF，别让 Windows 检出时改坏。
+*.sql text eol=lf
